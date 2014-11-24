@@ -32,7 +32,8 @@ int main()
 		cout << "___" << endl;
 		cout << multiples[i] << '|' << endl;
 	}
-	cout << "The sum of all the multiples of 3 & 5 below 1000 is: " << sum << endl;
+	cout << "The sum of all the multiples of 3 & 5 below 1000 is: " << sum
+			<< endl;
 
 	return 0;
 

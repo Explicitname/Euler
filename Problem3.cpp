@@ -20,6 +20,6 @@ int main() {
 		} else
 			num++;
 
-	cout << "The factor of 600851475143 is: " << factorOf << endl;
+	cout << " The factor of 600851475143 is: " << factorOf << endl;
 }
 
