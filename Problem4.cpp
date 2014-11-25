@@ -33,6 +33,7 @@ int main()
 
 {
 	int prod = 10;
+	int highPal;
 
 	for (int i = 999; i >= 100; i--) {
 		for (int j = 999; j >= 100; j--)
@@ -43,13 +44,17 @@ int main()
 			cout << i << " x " << j << "\n" << endl;
 			if (isPal(prod) == 1)
 			{
-				cout << prod << " is the highest Palindrome!" << endl;
-				return 0;
+				if (prod > highPal)
+				{
+					highPal = prod;
+				}
+
 			}
 
 		}
 	}
 
+	cout << highPal << " is the highest Palindrome!" << endl;
 	return 0;
 
 }
