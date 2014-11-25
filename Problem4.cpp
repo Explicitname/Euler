@@ -24,13 +24,7 @@ int main()
 
 
 
-	/*string checkStr = "";
 
-	for (int i=100; i<=999; i++)
-	{
-
-	}
-	*/
 
 
 	cout << stringConv << endl;
