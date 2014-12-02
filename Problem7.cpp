@@ -10,38 +10,62 @@
 
 using namespace std;
 
-int isPrime(int num)
+
+
+bool isPrime(int num)
 
 {
 
-	for (int i = 2; i < num; i++) {
-		if ((num % i) == 0) {
+	for (int i = 2; i < num; i++)
+	{
+		if (num % i == 0)
+		{
 			i = num;
-			return 0;
+			return true;
 
-		} else {
-			return 1;
+		}
+		else
+		{
+			return false;
 		}
 	}
+
 
 }
 
 int main()
 
 {
-	int maxVect = 10001;
-	vector<int> primeVect;
+	int maxPrime = 10; //Max desired prime number
 
-	for (int num = 2; num < maxVect; num++)
+	int num = 2;
+	vector <int> primeVect;
+
+	while (primeVect.size() < maxPrime + 1)
 
 	{
-		if (isPrime(num) == 1) {
+		if (!isPrime(num))
+		{
 			primeVect.push_back(num);
 		}
+		cout << "..." << primeVect.size() << endl;
+		num++;
+
 
 	}
-	cout << primeVect[10000] << endl;
+
+	cout << primeVect[maxPrime] << endl;
+
+
+
+
+
+
+
+
 
 	return 0;
 }
+
+
 
