@@ -5,6 +5,7 @@
  *      Author: explicitname
  */
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -12,10 +13,12 @@ int main()
 
 {
 
-	bool cont = true;
-	int i = 0;
+	int j = 0;
+	int isDivisble = 0;
 
-	cout << "This program will find the smallest number that is evenly divisble by all the numbers from 1 through 20." << endl;
+	cout
+			<< "This program will find the smallest number that is evenly divisble by all the numbers from 1 through 20."
+			<< endl;
 	cout << "..." << endl;
 	cout << "..." << endl;
 	cout << "..." << endl;
@@ -23,27 +26,25 @@ int main()
 	cout << "..." << endl;
 	cout << "..." << endl;
 
-	while (cont == true)
+	while (true) {
 
-	{
+		j++;
 
-		i++;
+		for (int i = 11; i < 21; i++) {
+
+			if (j % i == 0) {
+				isDivisble++;
+			}
 
 
-		if (!(i % 20) && !(i % 19) && !(i % 18) && !(i % 17) && !(i % 16) && !(i % 15) && !(i % 14) && !(i % 13) && !(i % 12) && !(i % 11))
-		{
-			cout << "This smallest number that can divided evenly by all the numbers between 1-20 is: " << i << endl;
-			cont = false;
-			return 0;
 		}
 
-
-
-
-
+		if (isDivisble == 20) {
+			break;
+		}
 	}
 
-
+	cout << "The answer is: " << j << endl;
 
 	return 0;
 
