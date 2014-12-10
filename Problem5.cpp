@@ -14,7 +14,11 @@ int main()
 {
 
 	int j = 0;
+<<<<<<< HEAD
 	int isDivisible = 0;
+=======
+	int isDivisble = 0;
+>>>>>>> 389110ad561ba0c76777edee3fd5326b76ffc3c7
 
 	cout
 			<< "This program will find the smallest number that is evenly divisble by all the numbers from 1 through 20."
@@ -26,6 +30,7 @@ int main()
 	cout << "..." << endl;
 	cout << "..." << endl;
 
+<<<<<<< HEAD
 	while (true)
 	{
 
@@ -52,3 +57,29 @@ int main()
 	return 0;
 
 }
+=======
+	while (true) {
+
+		j++;
+
+		for (int i = 11; i < 21; i++) {
+
+			if (j % i == 0) {
+				isDivisble++;
+			}
+
+
+		}
+
+		if (isDivisble == 20) {
+			break;
+		}
+	}
+
+	cout << "The answer is: " << j << endl;
+
+	return 0;
+
+}
+
+>>>>>>> 389110ad561ba0c76777edee3fd5326b76ffc3c7

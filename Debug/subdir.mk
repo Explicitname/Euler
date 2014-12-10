@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+<<<<<<< HEAD
 ../Problem1.cpp \
 ../Problem2.cpp \
 ../Problem3.cpp \
@@ -31,6 +32,14 @@ CPP_DEPS += \
 ./Problem5.d \
 ./Problem6.d \
 ./Problem7.d \
+=======
+../main.cpp 
+
+OBJS += \
+./main.o 
+
+CPP_DEPS += \
+>>>>>>> 389110ad561ba0c76777edee3fd5326b76ffc3c7
 ./main.d 
 
 
